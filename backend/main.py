@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+from routers import student_router
 
 app = FastAPI()
-
+app.include_router(student_router.student_router)
 
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
 def root_response():
