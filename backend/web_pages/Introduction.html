@@ -1,0 +1,71 @@
+<!-- index.html -->
+<html>
+    <head>
+        <title>Welcome to My FastAPI Server</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+                text-align: center;
+                padding: 50px;
+                transition: background-color 0.5s ease;
+            }
+            h1 {
+                color: #007bff;
+                transition: color 0.5s ease;
+            }
+            .container {
+                max-width: 600px;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.5s ease, background-color 0.5s ease;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+                transition: background-color 0.5s ease, opacity 0.5s ease;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+            a {
+                color: #007bff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <h1>Welcome to My FastAPI Server</h1>
+            <p id="welcome-text">Enjoy exploring our content!</p>
+            <button onclick="animatePage()">Click Me!</button>
+        </div>
+        <script>
+            function animatePage() {
+                document.body.style.backgroundColor = '#e0ffe0';
+                document.querySelector('h1').style.color = '#28a745';
+                const container = document.getElementById('container');
+                container.style.transform = 'scale(1.05)';
+                container.style.backgroundColor = '#d4edda';
+                document.getElementById('welcome-text').innerHTML = 'Go to <a href="http://127.0.0.1:8000/docs">API DOCS</a> for API interactive documentation';
+                // Hide the button after clicking
+                const button = document.querySelector('button');
+                button.style.opacity = '0';
+                button.style.pointerEvents = 'none'; // Optional: Disable button click events
+            }
+        </script>
+    </body>
+</html>
