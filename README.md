@@ -12,6 +12,6 @@
 
 # starting the frontend
 # 1 cd frontend
-# npm install
-# npm run dev
-# Now the frontend is loaded up!!!
+# 2 npm install
+# 3 npm run dev
+# 4 Now the frontend is loaded up!!!
