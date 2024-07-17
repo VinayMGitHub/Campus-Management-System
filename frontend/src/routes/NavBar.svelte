@@ -21,7 +21,7 @@
     <HeaderNav>
       <HeaderNavItem href="/" text="" />
       <HeaderNavItem href="#/teacher" text="Teacher" />
-      <HeaderNavItem href="#/" text="Student" />
+      <HeaderNavItem href="#/student" text="Student" />
       <!-- <HeaderNavMenu text="Menu">
         <HeaderNavItem href="/" text="Link 1" />
         <HeaderNavItem href="/" text="Link 2" />

@@ -4,7 +4,7 @@
 
 <main>
     <h1>
-        Page for student
+        Page for Student
     </h1>
 </main>
 
