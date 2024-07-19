@@ -12,7 +12,11 @@
       { id: "1", name: "Teacher_name 1", gender: "Male", position: "Associate Professor" },
       { id: "2", name: "Teacher_name 2", gender: "Male", position: "Assistant Professor" },
       { id: "3", name: "Teacher_name 3", gender: "Female", position: "HOD" },
-      { id: "4", name: "Teacher_name 3", gender: "Female", position: "ADOC" }
+      { id: "4", name: "Teacher_name 3", gender: "Female", position: "ADOC" },
+      { id: "5", name: "Teacher_name 1", gender: "Male", position: "Associate Professor" },
+      { id: "6", name: "Teacher_name 2", gender: "Male", position: "Assistant Professor" },
+      { id: "7", name: "Teacher_name 3", gender: "Female", position: "HOD" },
+      { id: "8", name: "Teacher_name 3", gender: "Female", position: "ADOC" },
     ];
   </script>
   
@@ -27,12 +31,7 @@
       font-size: 2.5rem;
       text-align: center;
       color: #479aff;
-
-      /* text-shadow: 2px 2px 4px rgba(216, 74, 74, 0.3); */
       margin-bottom: 20px;
-      /* background: linear-gradient(90deg, rgba(255, 99, 71, 1) 0%, rgba(255, 165, 0, 1) 100%); */
-      /* -webkit-background-clip: text; */
-      /* color: transparent; */
       position: relative;
     }
   
