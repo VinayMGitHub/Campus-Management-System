@@ -26,12 +26,13 @@
       font-family: 'Arial', sans-serif;
       font-size: 2.5rem;
       text-align: center;
-      color: #ff6347;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      color: #479aff;
+
+      /* text-shadow: 2px 2px 4px rgba(216, 74, 74, 0.3); */
       margin-bottom: 20px;
-      background: linear-gradient(90deg, rgba(255, 99, 71, 1) 0%, rgba(255, 165, 0, 1) 100%);
-      -webkit-background-clip: text;
-      color: transparent;
+      /* background: linear-gradient(90deg, rgba(255, 99, 71, 1) 0%, rgba(255, 165, 0, 1) 100%); */
+      /* -webkit-background-clip: text; */
+      /* color: transparent; */
       position: relative;
     }
   
@@ -40,7 +41,7 @@
       display: block;
       width: 50px;
       height: 4px;
-      background-color: #ff6347;
+      background-color: #479aff;
       margin: 0 auto;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -49,7 +50,7 @@
   
     .heading::after {
       width: 100px;
-      background-color: rgba(255, 165, 0, 1);
+      background-color: #479aff;
     }
   
     main {
