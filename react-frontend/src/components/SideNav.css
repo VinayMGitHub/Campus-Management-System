@@ -1,0 +1,36 @@
+/* Styles for the sidebar */
+.sidebar {
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Full height */
+    background-color: rgb(0, 0, 0); /* Background color */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visualization */
+}
+
+.side-nav-text {
+    color: rgb(175, 175, 244);
+    font-size: 24px; /* Use hyphen here instead of camelCase */
+    text-align: left;
+    margin: 0; /* Remove default margin */
+}
+
+.side-nav-text a {
+    color: inherit; /* Inherit color from parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+.side-nav-text a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Styles for the separator */
+.side-nav-text-separator {
+    border: none; /* Remove default border */
+    height: 1px;
+    background-color: rgb(255, 255, 255); /* Match text color */
+    margin: 10px 0; /* Space between items */
+    width: 100%; /* Full width */
+}
