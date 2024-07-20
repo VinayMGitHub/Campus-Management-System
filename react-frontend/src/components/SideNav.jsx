@@ -1,5 +1,5 @@
 import './SideNav.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // Define navigation items dynamically
 const navItems = [
@@ -10,15 +10,29 @@ const navItems = [
 ];
 
 function SideNav() {
+    const [showSidebar, setShowSidebar] = useState(true);
+
+    useEffect(() => {
+        // Logic to toggle sidebar visibility
+        const handleResize = () => {
+            setShowSidebar(window.innerWidth > 768); // Example: Show sidebar on wider screens
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Initial check
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <div className="sidebar">
+        <div className={`sidebar ${showSidebar ? 'show' : ''}`}>
             {navItems.map((item, index) => (
                 <div key={index}>
                     <h1 className="side-nav-text">
                         <a href={item.link}>{item.label}</a>
                     </h1>
                     {index < navItems.length - 1 && (
-                        <hr className="side-nav-text-separator" />
+                        <hr className={`side-nav-text-separator ${showSidebar ? 'visible' : ''}`} />
                     )}
                 </div>
             ))}
